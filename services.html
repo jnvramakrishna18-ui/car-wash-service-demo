@@ -1,101 +1,10 @@
-<style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f2f4f7;
-  color: #333;
-}
-
-header {
-  background: linear-gradient(135deg, #0d6efd, #0099cc);
-  color: white;
-  padding: 30px 15px;
-  text-align: center;
-}
-
-nav {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-nav a {
-  text-decoration: none;
-  color: #0d6efd;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #ff6600;
-}
-
-section {
-  max-width: 950px;
-  margin: 25px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  animation: fadeIn 0.8s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-h2 {
-  color: #0d6efd;
-}
-
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.btn:hover {
-  background: #e65c00;
-}
-
-.card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-</style>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Services</title>
-<!-- STYLE HERE -->
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav style="background:#003b5c;padding:12px;text-align:center;">
-  <a href="index.html" style="color:white;margin:10px;">Home</a>
-  <a href="services.html" style="color:white;margin:10px;">Services</a>
-  <a href="pricing.html" style="color:white;margin:10px;">Pricing</a>
-  <a href="contact.html" style="color:white;margin:10px;">Contact</a>
-</nav>
-<header>
-  <h1>Our Services</h1>
-</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -104,17 +13,30 @@ footer {
   <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-  <div class="card">🚗 Exterior Car Wash</div>
-  <div class="card">🪑 Interior Cleaning</div>
-  <div class="card">🏍 Bike Wash</div>
-  <div class="card">✨ Deep Cleaning & Detailing</div>
-  <div class="card">🚚 Pick & Drop Service</div>
+<section class="section">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520342868574-5fa3804e551c">
+      <h3>Exterior Wash</h3>
+      <p>High pressure foam wash</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1616789916437-bbf724d2c7a4">
+      <h3>Interior Cleaning</h3>
+      <p>Seats, dashboard & vacuum</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1610147323479-a7fb11ffd5dd">
+      <h3>Bike Wash</h3>
+      <p>Chain, engine & polish</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  Premium Care for Your Vehicle
-</footer>
-
+<footer>© 2026 Car Wash Service</footer>
 </body>
 </html>

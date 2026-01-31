@@ -1,102 +1,10 @@
-<style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f2f4f7;
-  color: #333;
-}
-
-header {
-  background: linear-gradient(135deg, #0d6efd, #0099cc);
-  color: white;
-  padding: 30px 15px;
-  text-align: center;
-}
-
-nav {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-nav a {
-  text-decoration: none;
-  color: #0d6efd;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #ff6600;
-}
-
-section {
-  max-width: 950px;
-  margin: 25px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  animation: fadeIn 0.8s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-h2 {
-  color: #0d6efd;
-}
-
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.btn:hover {
-  background: #e65c00;
-}
-
-.card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-</style>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pricing</title>
-<!-- STYLE HERE -->
+  <title>Pricing - Car Wash Service</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav style="background:#003b5c;padding:12px;text-align:center;">
-  <a href="index.html" style="color:white;margin:10px;">Home</a>
-  <a href="services.html" style="color:white;margin:10px;">Services</a>
-  <a href="pricing.html" style="color:white;margin:10px;">Pricing</a>
-  <a href="contact.html" style="color:white;margin:10px;">Contact</a>
-  </nav>
-
-<header>
-  <h1>Our Pricing</h1>
-</header>
 
 <nav>
   <a href="index.html">Home</a>
@@ -105,15 +13,40 @@ footer {
   <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-  <div class="card">🚗 Car Wash – ₹399</div>
-  <div class="card">🏍 Bike Wash – ₹199</div>
-  <div class="card">✨ Deep Cleaning – ₹1499</div>
-  <div class="card">🚚 Pick & Drop – ₹199</div>
+<section class="section">
+  <h2>Our Pricing</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Basic Wash</h3>
+      <p><strong>₹399</strong></p>
+      <p>Exterior wash</p>
+      <p>Tyre cleaning</p>
+      <a class="btn" href="https://wa.me/919741194466" target="_blank">Book on WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Premium Wash</h3>
+      <p><strong>₹699</strong></p>
+      <p>Exterior + Interior</p>
+      <p>Dashboard polish</p>
+      <a class="btn" href="https://wa.me/919741194466" target="_blank">Book on WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Full Detailing</h3>
+      <p><strong>₹1499</strong></p>
+      <p>Deep cleaning</p>
+      <p>Wax & shine</p>
+      <a class="btn" href="https://wa.me/919741194466" target="_blank">Book on WhatsApp</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-  No Hidden Charges
+  © 2026 Car Wash Service | Bangalore
 </footer>
 
 </body>

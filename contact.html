@@ -1,0 +1,122 @@
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f4f7;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #0d6efd, #0099cc);
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+section {
+  max-width: 950px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  color: #0d6efd;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<!-- STYLE HERE -->
+</head>
+<body>
+
+<header>
+  <h1>Contact Us</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <h2>Send Enquiry</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin:8px 0;">
+    <input type="tel" placeholder="Mobile Number" required style="width:100%;padding:10px;margin:8px 0;">
+    <textarea placeholder="Your Requirement" style="width:100%;padding:10px;margin:8px 0;"></textarea>
+    <button class="btn">Submit</button>
+  </form>
+
+  <br>
+  <a href="tel:+919XXXXXXXXX" class="btn">📞 Call Now</a>
+  <a href="https://wa.me/919XXXXXXXXX" class="btn">💬 WhatsApp</a>
+</section>
+
+<footer>
+  We Serve Near You
+</footer>
+
+</body>
+</html>
